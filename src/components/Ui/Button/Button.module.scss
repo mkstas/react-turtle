@@ -1,0 +1,26 @@
+@import '/src/styles/functions';
+@import '/src/styles/mixins';
+
+.button {
+	display: inline-block;
+	min-width: rem(210);
+	padding: rem(10) rem(15);
+	border-radius: rem(10);
+	border: 0;
+	background-color: var(--accent);
+	transition: background-color 0.1s ease-in 0s;
+	font-family: inherit;
+	font-size: rem(16);
+	font-weight: 500;
+	text-align: center;
+	color: var(--fc-button);
+	@include media('min', 'width', 768) {
+		font-size: rem(18);
+	}
+	&:hover {
+		background-color: var(--accent-light);
+	}
+	&:active {
+		background-color: var(--accent-dark);
+	}
+}

@@ -1,0 +1,32 @@
+@import '/src/styles/functions';
+@import '/src/styles/mixins';
+
+.wrapper {
+	margin: 0 auto;
+	padding: 15vh 0 3vh;
+}
+
+.container {
+	display: grid;
+	justify-items: center;
+	gap: rem(30);
+}
+
+.message {
+	display: grid;
+	gap: rem(3);
+	text-align: center;
+}
+
+.title {
+	font-size: rem(28);
+	color: var(--fc-title);
+	@include media('min', 'width', 768) {
+		font-size: rem(32);
+	}
+}
+
+.text {
+	font-size: rem(20);
+	font-weight: 500;
+}

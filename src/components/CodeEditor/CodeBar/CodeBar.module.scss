@@ -1,0 +1,43 @@
+@import '/src/styles/functions';
+@import '/src/styles/mixins';
+
+.wrapper {
+	height: 100vh;
+	border-right: rem(2) solid var(--bg-second);
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: rem(60);
+	padding: rem(10);
+	gap: 0 rem(10);
+	border-bottom: rem(2) solid var(--bg-second);
+}
+
+.tab {
+	display: flex;
+	flex: 1;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	border: 0;
+	border-radius: rem(10);
+	background-color: var(--bg-second);
+	font-family: inherit;
+	font-size: rem(14);
+	font-weight: 700;
+	color: var(--fc-button-dark);
+	cursor: pointer;
+}
+
+.activeTab {
+	background-color: var(--accent);
+	color: var(--fc-button);
+}
+
+.editor {
+	height: calc(100% - 60px);
+	padding: rem(10);
+}

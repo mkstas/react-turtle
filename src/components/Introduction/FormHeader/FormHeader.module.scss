@@ -1,0 +1,26 @@
+@import '/src/styles/functions';
+@import '/src/styles/mixins';
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 0 rem(-10);
+	gap: 0 rem(20);
+}
+
+.title {
+	padding: 0 0 0 rem(10);
+	color: var(--fc-title);
+}
+
+.link {
+	padding: rem(10);
+	font-size: rem(18);
+	color: inherit;
+	transition: color 0.2s ease-in-out 0s;
+	&:hover {
+		color: var(--accent);
+	}
+}

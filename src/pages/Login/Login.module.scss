@@ -1,0 +1,29 @@
+@import '/src/styles/functions';
+@import '/src/styles/mixins';
+
+.wrapper {
+	display: grid;
+	max-width: rem(450);
+	margin: 0 auto;
+	padding: 10vh rem(10);
+	gap: rem(60);
+}
+
+.form {
+	display: grid;
+	gap: rem(50);
+}
+
+.fieldset {
+	display: grid;
+	width: 100%;
+	padding: 0;
+	gap: rem(20);
+	border: 0;
+	&[data-direct=right] {
+		justify-self: start;
+	}
+	&[data-direct=left] {
+		justify-self: end;
+	}
+}

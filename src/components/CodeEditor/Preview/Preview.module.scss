@@ -1,0 +1,79 @@
+@import '/src/styles/functions';
+@import '/src/styles/mixins';
+
+.wrapper {
+	height: 100vh;
+}
+
+.header {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: rem(20);
+	height: rem(60);
+	padding: rem(10);
+	border-bottom: rem(2) solid var(--bg-second);
+}
+
+.nickname {
+	padding: rem(10);
+	font-size: rem(18);
+}
+
+.save {
+	padding: rem(10);
+	border: 0;
+	background: transparent;
+	transition: background-color 0.1s ease-in-out 0s;
+	&:active {
+		background-color: var(--bg-second);
+	}
+}
+
+.exit {
+	display: flex;
+	align-items: center;
+	padding: rem(10);
+	gap: rem(5);
+	border: 0;
+	background: transparent;
+	&:hover {
+		& .logout {
+			text-decoration: underline;
+		}
+	}
+}
+
+.icon {
+	width: rem(26);
+	height: rem(26);
+}
+
+.logout {
+	font-family: var(--font-paragraph);
+	font-size: rem(16);
+	font-weight: 500;
+	color: var(--fc-button-light);
+}
+
+.content {
+	height: calc(100% - 60px);
+	background-color: var(--bg-third);
+}
+
+.view {
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+.loading {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: rem(28);
+	font-weight: 700;
+	color: var(--fc-dark);
+}

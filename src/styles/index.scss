@@ -1,0 +1,23 @@
+@import './reset';
+@import './functions';
+@import './mixins';
+@import './variables';
+
+#root {
+	overflow: hidden;
+}
+
+body {
+	background: var(--bg-primary);
+	font-family: var(--font-paragraph);
+	font-size: var(--fz);
+	color: var(--fc-paragraph);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+[class*='_container'] {
+	max-width: rem(1440);
+	padding: 0 rem(10);
+	margin: 0 auto;
+}

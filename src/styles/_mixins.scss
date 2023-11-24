@@ -1,0 +1,7 @@
+// Media query
+@mixin media($minmax, $value, $size) {
+	$size: ($size / 16) + rem;
+	@media (#{$minmax}-#{$value}: $size) {
+		@content;
+	}
+}

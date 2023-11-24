@@ -1,0 +1,33 @@
+@import '/src/styles/functions';
+@import '/src/styles/mixins';
+
+.label {
+	display: grid;
+	gap: rem(3);
+}
+
+.caption {
+	font-size: rem(18);
+	font-weight: 500;
+	&_wrong {
+		color: var(--wrong);
+	}
+}
+
+.input {
+	padding: rem(10) rem(15);
+	border: 0;
+	border-radius: rem(10);
+	background-color: var(--bg-second);
+	border: rem(2) solid var(--bg-second);
+	outline: 0;
+	font-family: inherit;
+	font-size: rem(18);
+	color: var(--fc-paragraph);
+	&:not(.wrong):focus {
+		border-color: var(--accent);
+	}
+	&_wrong {
+		border-color: var(--wrong);
+	}
+}
